@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="707.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="statistic.MenuController">
+   <children>
+      <Pane layoutX="319.0" prefHeight="604.0" prefWidth="388.0" style="-fx-background-color: #EEEEEE;">
+         <children>
+            <JFXButton fx:id="btn_case3" alignment="BOTTOM_LEFT" graphicTextGap="55.0" layoutX="104.0" layoutY="482.0" onAction="#openAction" onMouseClicked="#openAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #fe7477; -fx-background-radius: 5EM;" text="CASE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_3_circle_c_99px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_case2" alignment="BOTTOM_LEFT" graphicTextGap="55.0" layoutX="104.0" layoutY="417.0" onAction="#openAction" onMouseClicked="#openAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #fe7477; -fx-background-radius: 5EM;" text="CASE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_2_circle_c_99px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_case1" alignment="BOTTOM_LEFT" graphicTextGap="55.0" layoutX="104.0" layoutY="350.0" onAction="#openAction" onMouseClicked="#openAction" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #fe7477; -fx-background-radius: 5EM;" text="CASE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_1_circle_c_99px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="76.0" layoutY="70.0" prefHeight="79.0" prefWidth="288.0" text="This application is designed to calculate statistics variables" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="51.0" layoutY="301.0" prefHeight="3.0" prefWidth="329.0" />
+            <Label layoutX="91.0" layoutY="149.0" prefHeight="27.0" prefWidth="249.0" text="- Mean" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="180.0" prefHeight="27.0" prefWidth="249.0" text="- Variance" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="209.0" prefHeight="27.0" prefWidth="249.0" text="- Standard Deviation" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="242.0" prefHeight="27.0" prefWidth="249.0" text="- Confidence interval" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_color" prefHeight="604.0" prefWidth="351.0" stylesheets="@pane.css">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="152.0" layoutX="111.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_room_98px_4.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="15.0" layoutY="301.0" prefHeight="3.0" prefWidth="316.0" />
+            <Label alignment="TOP_LEFT" layoutX="13.0" layoutY="72.0" prefHeight="49.0" prefWidth="271.0" text="STATISTICS" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="131.0" prefHeight="27.0" prefWidth="304.0" text="Case 1, collection is based on numerical data" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="158.0" prefHeight="27.0" prefWidth="316.0" text="Case 2 is a Yes/No case with number successes" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="185.0" prefHeight="27.0" prefWidth="329.0" text="Case 3 is a Yes/No case with percentage of successes" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="351.0" layoutY="-5.0" prefHeight="609.0" prefWidth="4.0" style="-fx-background-color: #aaaaaa;" />
+   </children>
+</AnchorPane>
